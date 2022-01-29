@@ -11,13 +11,13 @@ int main() {
 	scanf("%s", &str);
 	
 	for (int i = 0; i < 26; i++) {
-		isAlpha[i] = (i + 97);
+		isAlpha[i] = (i + 'a');
 		answer[i] = -1;
 	}
 
 	for (int i = 0; str[i] != '\0'; i++) {
 		for (int j = 0; j < 26; j++) {
-			if (isAlpha[j] == (int)str[i]) {
+			if (isAlpha[j] == str[i]) {
 				if (answer[j] == -1) {
 					answer[j] = i;
 				}				
