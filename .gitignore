@@ -6,7 +6,8 @@
 # Prerequisites
 *.d
 
-SoftwareExpert/*
+./SoftwareExpert/*
+*.txt
 
 # Compiled Object files
 *.slo
