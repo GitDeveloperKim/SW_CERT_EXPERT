@@ -6,13 +6,13 @@
 
 using namespace std;
 
-
+// https://cocoon1787.tistory.com/499
 int main() {
 	ios_base::sync_with_stdio(false); cout.tie(NULL); cin.tie(NULL);
-	freopen("input.txt", "r", stdin);	// Á¦Ãâ½Ã Á¦°Å
+	freopen("input.txt", "r", stdin);	// ì œì¶œì‹œ ì œê±°
 
-	int N; // ¹®ÀÚ¿­ÀÇ °¹¼ö -> (keys)
-	int M; // °Ë»ç ¹®ÀÚ¿­ °¹¼ö -> S{query_strings}
+	int N; // ë¬¸ìì—´ì˜ ê°¯ìˆ˜ -> (keys)
+	int M; // ê²€ì‚¬ ë¬¸ìì—´ ê°¯ìˆ˜ -> S{query_strings}
 	cin >> N >> M;
 
 	int answer = 0;
