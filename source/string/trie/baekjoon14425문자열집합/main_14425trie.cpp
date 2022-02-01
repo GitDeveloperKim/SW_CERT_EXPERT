@@ -7,7 +7,8 @@ using namespace std;
 
 const int ALPHABET_SIZE = 26;
 
-// 14425 ¹®ÀÚ¿­ ÁıÇÕ 
+// 14425 ë¬¸ìì—´ ì§‘í•© 
+// https://blog.naver.com/cocokelly1229/222059739350
 typedef struct TrieNode {
 	TrieNode* children[ALPHABET_SIZE];
 	bool isEndOfWord;
@@ -65,8 +66,8 @@ bool query(TrieNode* parent, string keyword) {
 int main() {
 	ios_base::sync_with_stdio(false); cout.tie(NULL); cin.tie(NULL);
 
-	int N; // ¹®ÀÚ¿­ÀÇ °¹¼ö -> (keys)
-	int M; // °Ë»ç ¹®ÀÚ¿­ °¹¼ö -> S{query_strings}
+	int N; // ë¬¸ìì—´ì˜ ê°¯ìˆ˜ -> (keys)
+	int M; // ê²€ì‚¬ ë¬¸ìì—´ ê°¯ìˆ˜ -> S{query_strings}
 	cin >> N >> M;
 
 	string keys[10004];
@@ -80,9 +81,9 @@ int main() {
 	}
 
 
-	TrieNode* root = makeNode(); // ¾Æ¹«°Íµµ µé¾îÀÖÁö ¾ÊÀº root »ı¼º
+	TrieNode* root = makeNode(); // ì•„ë¬´ê²ƒë„ ë“¤ì–´ìˆì§€ ì•Šì€ root ìƒì„±
 
-	for (int i = 0; i < N; i++) // ÁÖ¾îÁø keys·Î Trie »ı¼º
+	for (int i = 0; i < N; i++) // ì£¼ì–´ì§„ keysë¡œ Trie ìƒì„±
 		insert(root, keys[i]);
 
 	int answer = 0;
