@@ -12,7 +12,7 @@ int main() {
     int pawn = 8;
     
     scanf("%d %d %d %d %d %d", &king, &queen, &rook, &bishop, &knight, &pawn);
-    
     printf("%d %d %d %d %d %d", chess[0]-king, chess[1]-queen, chess[2]-rook, chess[3]-bishop, chess[4]-knight, chess[5]-pawn);
-    //printf("%d %d %d %d %d %d", chess[0], chess[1], chess[2], chess[3], chess[4], chess[5]);
+    
+    return 0;
 }
